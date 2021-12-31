@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Auth Project',
+      title: 'Auth Module',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Auth Project Page'),
+      home: MyHomePage(title: 'Flutter Auth Module Page'),
     );
   }
 }
@@ -104,9 +104,13 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.amber,
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: Icon(Icons.add),
+        child: Icon(
+          Icons.access_alarm,
+          color: Colors.pinkAccent,
+        ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
